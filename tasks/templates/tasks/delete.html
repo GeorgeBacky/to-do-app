@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<style>
+
+body{
+	background-color: #85c0ff;
+}
+
+form ,p {
+	text-align: center;
+}
+.center-column{
+		width:600px;
+		margin: 20px auto;
+		padding:20px;
+		background-color: #fff;
+		border-radius: 3px;
+		box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.75);
+	}
+div {
+  transition-delay: 50s;
+}
+
+</style>
+<div class="center-column">
+<center><p>Are you sure you want to delete "{{item}}"?</p>
+
+<center><a href="{% url 'list' %}" >Cancel</a></center>
+
+<form method="POST" action="">
+	{% csrf_token %}
+	<input type="submit" onclick="onclickDelete()" name="Confirm">
+</form>
+</div>
+
+<script src="/static/myjs.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
