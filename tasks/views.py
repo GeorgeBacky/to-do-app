@@ -30,6 +30,7 @@ def updateTask(request, pk):
 		form = TaskForm(request.POST, instance=task)
 		if form.is_valid():
 			form.save()
+			time.sleep(1)
 			return redirect('/')
 
 	context = {'form':form}
