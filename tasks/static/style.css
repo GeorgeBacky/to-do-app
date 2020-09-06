@@ -1,0 +1,103 @@
+input{
+    width: 100%;
+    padding: 11px 6px;
+    margin: 8px 0;
+    display: flex;
+    border-radius: 8px;
+}
+
+body{
+    background-color: #85c0ff;
+}
+
+.box {
+    border: 2px solid #1C6EA4;
+}
+
+.card {
+    margin: 20px auto;
+    padding:20px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.75);
+    display: flexbox;
+}
+
+.list-group-item {
+    padding: 10px;
+    margin: 4px 3px 7px 1px;;
+    background-color: #696888;
+}
+
+.btn-danger{
+    background-color: #fdb734;
+    border-color: #e59400;
+}
+
+.btn-delete-danger {
+    background-color: #9c1818;
+    border: #a32e2e;
+    width: 143px;
+    color: white;
+    padding: 10px;
+}
+
+input::placeholder {
+    color: #000000;
+}
+
+.special-css {
+    color: #ffffff;
+    background: #85c0ff;
+    text-shadow: 3px 5px 2px #292929;
+}
+
+.footer-span {
+    float: left;
+    padding-top: 25px;
+}
+
+.fab, .far {
+    font-weight: 400;
+    padding: 3px;
+    display: inline-block;
+    float: right;
+    margin: 10px 0px;
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    color: aliceblue;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #6fa2da;
+    color: white;
+    text-align: center;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 10px;
+    width: 146px;
+}
+
+.link-hide {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.center-column {
+    margin: 20px auto;
+    padding:20px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.75);
+}

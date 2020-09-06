@@ -1,68 +1,37 @@
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-<style>
-
-	body{
-		background-color: #85c0ff;
-	}
-
-	input{
-		width: 100%;
-		padding: 12px 20px;
-		margin: 8px 0;
-		box-sizing: border-box;
-	}
-
-	input::placeholder {
-	  color: #d3d3d3;
-	}
-
-	.submit{
-		background-color: #4491f0;
-	}
-
-	.center-column{
-		width:600px;
-		margin: 20px auto;
-		padding:20px;
-		background-color: #fff;
-		border-radius: 3px;
-		box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.75);
-	}
-
-	.item-row{
-		background-color: #5a57ff;
-		margin: 10px;
-		padding: 20px;
-		border-radius: 3px;
-		color: #fff;
-		font-size: 16px;
-		box-shadow: 0px -1px 10px -4px rgba(0,0,0,0.75);
-	}
-
-	.btn-danger{
-		background-color: #fdb734;
-		border-color: #e59400;
-	}
-
-h3 {
-	text-align: center;
-}
-
-</style>
-<div class="center-column">
-    <center>
-    <h3>Update Task</h3>
-
-    <form method="POST" action="">
-        {% csrf_token %}
-
-        {{form}}
-         <input type="submit" class="btn btn-primary" onclick="onclickUpdate()" name="Update Task">
-    
-    </form>
-</center>
-</div>
-
-<script src="/static/myjs.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<!doctype html>
+ <html lang="en">
+   <head>
+	 <meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+	 <link rel="stylesheet" href="/static/style.css">
+	 <title>To-Do APP</title>
+   </head>
+   <body>
+	<div class="card">
+		<center>
+		<h3>Update Task</h3>
+	
+		<form method="POST" action="">
+			{% csrf_token %}
+	
+			{{form}}
+			 <input type="submit" class="btn btn-primary" onclick="onclickUpdate()" name="Update Task">
+		
+		</form>
+	</center>
+	</div>
+   </body>
+   <footer class="footer">
+	<span class="footer-span">Developed by George Bakalis</span>
+	<a href="https://www.instagram.com/george_bakalis_/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+	<a href="https://www.facebook.com/georgeb.backy/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+	<a href="https://github.com/GeorgeBacky" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+	<a href="https://www.linkedin.com/in/giwrgos-bakalis01/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+	
+</footer>
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</html>
